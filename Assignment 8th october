@@ -1,4 +1,5 @@
 ** GitHub 1st Assignment**
+
 1. What is GitHub?
    GitHub is a web-based platform that provides tools for version control, collaboration, and code hosting.
    It allows developers to work on software projects together, track changes, and manage code repositories.
@@ -57,3 +58,220 @@
 15. How do you close an issue on GitHub?
     To close an issue on GitHub, you can add a comment with keywords like "closes," "fixes," or "resolves," followed by the issue number. 
     For example: "Closes #1." Alternatively, you can use the GitHub web interface to manually close the issue.
+
+** GitHub 2nd Assignment**
+
+**Push, Commit, Add:**
+
+1. What does the "git add" command do in Git?
+   The "git add" command in Git stages changes for the next commit. It prepares changes from your working directory to be included in the commit.
+
+2. How do you stage changes for a commit in Git?
+   To stage changes for a commit, you use the "git add" command followed by the filenames or paths of the files you want to include in the next
+   commit. For example, "git add file.txt" stages changes in "file.txt."
+
+3. What is a Git commit, and how is it different from a push?
+   A Git commit is a snapshot of your changes at a specific point in time. It records your changes along with a commit message. 
+   A commit is a local operation, and it doesn't share changes with a remote repository. In contrast, "git push" is used to upload your local commits to a remote repository, making them accessible to others.
+
+4. How can you create a Git commit with a commit message?
+   To create a Git commit with a commit message, you use the "git commit" command followed by the "-m" flag and your message in double quotes. 
+   For example, "git commit -m 'Add new feature.'"
+
+5. What does "git push" do in Git, and why is it important?
+   "git push" in Git is used to upload local commits to a remote repository, such as on GitHub or GitLab. It's important for sharing your changes with others and ensuring that the remote repository reflects the latest version of your project.
+
+6. How do you push your local Git commits to a remote repository?
+   To push local Git commits to a remote repository, use the "git push" command followed by the remote name and the branch name. 
+   For example, "git push origin main" would push local commits in the "main" branch to the remote named "origin."
+
+7. Can you explain the difference between "git add" and "git commit"?
+   "git add" is used to stage changes in your working directory for the next commit, while "git commit" is used to record a snapshot
+   of those staged changes along with a commit message. In other words, "git add" prepares changes for commit, and "git commit" captures 
+   the state of your project at a particular moment.
+
+**Config:**
+
+8. What is the purpose of Git configuration settings?
+   Git configuration settings are used to customize your Git environment, set up your identity, and configure how Git interacts with repositories.
+
+9. How do you set your Git username and email globally?
+   You can set your Git username and email globally with the following Git commands:
+   - `git config --global user.name "Your Name"`
+   - `git config --global user.email "youremail@example.com"`
+
+10. What is the difference between local and global Git configurations?
+    Local Git configurations are specific to a particular Git repository, while global Git configurations apply to all your 
+    Git repositories on your local machine.
+
+11. How can you view your Git configuration settings?
+    You can view your Git configuration settings by using the "git config" command with various options. 
+    For example, "git config --list" displays all configuration settings.
+
+12. Why is it important to configure your Git identity?
+    Configuring your Git identity (username and email) is important because it associates your commits with you. 
+    It's useful for tracking contributions, collaborating with others, and maintaining an accurate commit history.
+
+**Merge, Pull, Branch:**
+
+13. What is a Git branch, and why do we use them?
+    A Git branch is a separate line of development that allows you to work on new features, bug fixes, or experiments without affecting the 
+    main/master branch. Branches help in code organization and collaboration.
+
+14. How do you create a new Git branch?
+    You can create a new Git branch using the "git branch" command followed by the branch name. 
+    To switch to the new branch, use "git checkout" or "git switch." For example, "git branch new-feature" creates a branch named "new-feature."
+
+15. What is the "git merge" command used for in Git?
+    The "git merge" command in Git is used to combine changes from one branch into another. 
+    It's typically used to integrate the changes from a feature branch into the main/master branch.
+
+16. How do you merge changes from one branch into another?
+    To merge changes from one branch into another, you first switch to the target branch (e.g., main) and then
+    use "git merge" followed by the name of the source branch (e.g., "git merge feature-branch"). 
+    This combines the changes from the source branch into the target branch.
+
+17. What is a merge conflict, and how can you resolve it?
+    A merge conflict occurs when Git is unable to automatically merge changes from different branches. 
+    You must manually resolve conflicts by editing the conflicting files, marking the resolved sections, and then committing the changes.
+
+18. What is the purpose of the "git pull" command in Git?
+    The "git pull" command in Git is used to update your local repository with changes from a remote repository. 
+    It's essentially a combination of "git fetch" (to retrieve changes) and "git merge" (to incorporate those changes into your branch).
+
+19. How do you update your local repository with changes from a remote repository using "git pull"?
+    To update your local repository with changes from a remote repository, use "git pull" followed by the remote name and branch name. 
+    For example, "git pull origin main" fetches changes from the "main" branch in the remote named "origin" and merges them into your current branch.
+
+20. Can you explain the difference between "git merge" and "git pull"?
+    "git merge" is used to combine changes from one branch into another within your local repository. 
+    "git pull" combines "git fetch" (to retrieve remote changes) and "git merge" (to integrate those changes) and is used to 
+    update your local branch with changes from a remote repository.
+
+**General Git:**
+
+21. What is Git, and what problem does it solve in software development?
+    Git is a distributed version control system that tracks and manages changes to source code. It helps solve the problem of tracking code changes,
+    collaborating with others, and maintaining a history of software development.
+
+22. How do you initialize a Git repository in a directory?
+    To initialize a Git repository in a directory, navigate to the directory in your terminal and use the "git init" command.
+    This command creates a new Git repository in the current directory.
+
+23. How do you check the status of your Git repository?
+    You can check the status of your Git repository by using the "git status" command. It displays information about untracked files, 
+    changes to be committed, and more.
+
+24. What is the purpose of the ".gitignore" file in Git?
+    The ".gitignore" file is used to specify files and directories that should be ignored by Git. It's helpful for
+   excluding build artifacts, temporary files, and other files that don't need to be versioned.
+
+25. How can you view the commit history of a Git repository?
+    You can view the commit history of a Git repository using the "git log" command. It displays a list of commits, 
+    including commit messages, authors, dates, and commit hashes.
+
+26. How do you create a new Git repository on a remote hosting service like GitHub or GitLab?
+    To create a new Git repository on a remote hosting service, like GitHub or GitLab, you typically log in to your account, 
+    find the option to create a new repository, provide a name and other details, and follow the prompts to create the repository.
+
+27. What is the purpose of a Git remote?
+    A Git remote is a reference to a remote repository, typically hosted on a server. Remotes allow you to interact with and fetch or 
+    push changes to a central repository.
+
+28. How can you add a remote repository to your local Git repository?
+    You can add a remote repository to your local Git repository using the "git remote add" command, followed by a name for the remote 
+    and the URL of the remote repository. For example, "git remote add origin https://github.com/username/repo.git" adds a remote named "origin."
+
+29. What is the Git workflow for making changes, committing, and pushing to a remote repository?
+    The typical Git workflow involves these steps:
+    1. Make changes to files in your working directory.
+    2. Use "git add" to stage changes for commit.
+    3. Use "git commit" to create a snapshot with a commit message.
+    4. Use "git push" to upload your local commits to a remote repository.
+
+30. How do you undo the last Git commit?
+    To undo the last Git commit, you can use the "git reset" or "git reset --soft" command. For example, "git reset HEAD~1" will undo the last 
+    commit while keeping your changes in your working directory. Be cautious when using these commands, as they rewrite history.
+
+
+** Tableau Assignment**
+
+**Tableau Basics:**
+
+1. What is Tableau used for?
+   Tableau is a data visualization and business intelligence tool that is used for transforming raw data into an understandable format. 
+It helps users create interactive and shareable dashboards and reports to gain insights from data.
+
+2. How do you create charts and graphs in Tableau?
+   To create charts and graphs in Tableau, you connect to your data source, drag and drop dimensions and measures onto the 
+Rows and Columns shelves, and select the chart type you want to create. You can then customize the visualization as needed.
+
+3. What is a data source in Tableau?
+   A data source in Tableau is a connection to a dataset, which can be a database, spreadsheet, web data, or other file types. 
+It is the foundation for creating visualizations in Tableau.
+
+4. What is a dashboard in Tableau?
+   A dashboard in Tableau is a collection of sheets and objects (e.g., charts, images, web content) combined into a single view. 
+Dashboards allow you to interactively explore and present data.
+
+5. How can you filter data in Tableau?
+   You can filter data in Tableau using filter cards, quick filters, or parameters. Filters allow you to narrow down the data displayed 
+in your visualizations, making it easier to focus on specific aspects.
+
+6. What are dimensions and measures in Tableau?
+   In Tableau, dimensions are categorical data that provide context and structure to your visualizations, while measures are numeric data 
+   that you can perform calculations on, such as sums or averages.
+
+7. What is the purpose of calculated fields in Tableau?
+   Calculated fields in Tableau allow you to create new data elements by performing calculations on existing fields in your data source. 
+   They are useful for generating custom metrics or aggregations.
+
+8. How can you share Tableau visualizations with others?
+   Tableau visualizations can be shared through Tableau Server, Tableau Online, or by publishing Tableau workbooks to Tableau Public. 
+   You can also export visualizations as image files or PDFs for sharing.
+
+9. What is the difference between Tableau Desktop and Tableau Server?
+   Tableau Desktop is used to create and design visualizations and reports. Tableau Server is a web-based platform that allows you 
+   to publish and share Tableau workbooks with other users in your organization. Tableau Server also provides security, collaboration, and data 
+   source management features.
+
+10. What are some common file formats that Tableau can connect to?
+    Tableau can connect to a wide range of file formats and data sources, including Excel, CSV, SQL databases, 
+    cloud services like AWS and Google BigQuery, web data connectors, and many more.
+
+**Tableau History Questions:**
+
+1. When was Tableau Software founded?
+   Tableau Software was founded in 2003.
+
+2. Who were the founders of Tableau?
+   Tableau was co-founded by Chris Stolte, Christian Chabot, and Pat Hanrahan.
+
+3. Can you name one of the early versions of Tableau Desktop?
+   One of the early versions of Tableau Desktop was Tableau Desktop 2.0.
+
+4. What year did Tableau go public?
+   Tableau went public in 2013.
+
+5. Which major tech company acquired Tableau in 2019?
+   Salesforce, a major tech company, acquired Tableau in 2019.
+
+6. How has Tableau's software evolved since its inception?
+   Tableau's software has evolved from a desktop-based data visualization tool to a comprehensive suite that includes Tableau Desktop, 
+   Tableau Server, Tableau Online, and Tableau Public. It has added features for data preparation, advanced analytics, and cloud connectivity.
+
+7. What was Tableau's initial mission or goal as a company?
+   Tableau's initial mission was to help people see and understand their data. The company aimed to provide accessible and 
+   powerful data visualization tools to make data analysis easier for individuals and organizations.
+
+8. Can you mention a notable achievement or recognition received by Tableau?
+   Tableau has received numerous awards and recognitions over the years, including being named a leader in the Gartner Magic Quadrant for 
+   Analytics and Business Intelligence Platforms.
+
+9. In what city was Tableau Software headquartered during its early years?
+   Tableau Software was headquartered in Seattle, Washington, during its early years.
+
+10. What role did the Tableau user community play in its growth?
+    The Tableau user community played a significant role in Tableau's growth by contributing to the development of the product, 
+    sharing knowledge and best practices, and fostering a culture of data visualization and data-driven decision-making.
+   This community has been instrumental in the success of Tableau.
